@@ -48,5 +48,5 @@ def knn_predict(x,y,xtest,k_neighbour=5,matric='cosine'):
             else:
                 count_dict[k.keys()] = 1
 
-    y.append(sorted(count_dict.items(),key=lambda x:x[1], reverse= True)[0])
+    y_pred.append(sorted(count_dict.items(),key=lambda x:x[1], reverse= True)[0])
     return y_pred
